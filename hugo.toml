@@ -1,0 +1,4 @@
+baseURL = "https://go-streamkit.github.io/"
+locale = "en-us"
+title = "go-streamkit"
+disableKinds = ["taxonomy", "term", "RSS", "sitemap"]

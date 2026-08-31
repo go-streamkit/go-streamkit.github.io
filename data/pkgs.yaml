@@ -1,0 +1,2 @@
+packages:
+  - { name: "streamkit", chip: "S", desc: "Mutualised, site-agnostic transport: a retrying, rate-limited, resumable client.", url: "https://github.com/go-streamkit/streamkit", doc: "https://pkg.go.dev/github.com/go-streamkit/streamkit" }

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>{{ .Site.Title }} — Transport for streaming media, shared rather than reinvented.</title>
+<meta name="description" content="Transport for streaming media, shared rather than reinvented. Pure Go, CGO_ENABLED=0.">
+<link rel="icon" type="image/svg+xml" href="{{ "favicon.svg" | relURL }}">
+<link rel="stylesheet" href="{{ "css/brand.css" | relURL }}">
+<script src="{{ "js/theme.js" | relURL }}"></script>
+</head><body>
+<section class="hero">
+  <button id="themebtn" class="theme" type="button">Theme: System</button>
+  <img src="{{ "img/go-streamkit-white.png" | relURL }}" alt="go-streamkit">
+  <h1>go-streamkit</h1>
+  <p>Transport for streaming media, shared rather than reinvented.</p>
+  <div class="btns">
+    <a class="btn btn-solid" href="https://pkg.go.dev/github.com/go-streamkit/streamkit">Reference</a>
+    <a class="btn btn-ghost" href="https://github.com/go-streamkit">GitHub</a>
+  </div>
+</section>
+<div class="wrap">
+  <div class="panel">
+    <h2>What is go-streamkit?</h2>
+    <p>The awkward parts of pulling media are the same whatever the site: retrying, pacing, resuming, and not hammering anyone. go-streamkit holds them once, site-agnostic and in pure Go, so a downloader is the part that knows about a site — not the part that re-solves HTTP.</p>
+  </div>
+  <h2 class="section">Packages</h2>
+  <p class="sub">{{ len hugo.Data.pkgs.packages }} module(s) in this organisation.</p>
+  <div class="grid">
+    {{ range hugo.Data.pkgs.packages }}
+    <div class="card">
+      <div class="chip">{{ .chip }}</div>
+      <div class="nm">{{ .name }}</div>
+      <div class="ds">{{ .desc }}</div>
+      <div class="lk"><a href="{{ .url }}">GitHub</a> · <a href="{{ .doc }}">pkg.go.dev</a></div>
+    </div>
+    {{ end }}
+  </div>
+</div>
+<footer>Built with Hugo · Pure Go, CGO=0 · Branding from <a href="https://github.com/go-streamkit/brand">go-streamkit/brand</a></footer>
+</body></html>
