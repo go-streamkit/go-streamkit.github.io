@@ -1,2 +1,2 @@
 packages:
-  - { name: "streamkit", chip: "S", desc: "Mutualised, site-agnostic transport: a retrying, rate-limited, resumable client.", url: "https://github.com/go-streamkit/streamkit", doc: "https://pkg.go.dev/github.com/go-streamkit/streamkit" }
+  - { name: "streamkit", chip: "S", desc: "Mutualised, site-agnostic transport: a retrying, rate-limited client; HLS playlist and DASH manifest parsers and (v0.1.0) VOD writers for CMAF/fMP4 segments.", url: "https://github.com/go-streamkit/streamkit", doc: "https://pkg.go.dev/github.com/go-streamkit/streamkit" }
